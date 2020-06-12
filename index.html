@@ -3,26 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>ACHS Link Crew</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="index_style.css">
+
   </head>
+  
   <body>
     <header>
-      <h1 id = "title"> ACHS Link Crew</h1>
+        <a href="index.html"><img src="https://i.imgur.com/S5xikBq.png"></a>
 
-      <a href="specialties/spirit.html" class = "navi-link specialties">spirit</a>
-      <a href="specialties/service.html" class = "navi-link specialties">service</a>
-      <a href="specialties/scholarship.html" class = "navi-link specialties">scholarship</a>
-
-      <div id="etc">
-      <a href="leaders.html" class = "navi-link">leaders</a>
-      <a href="apply.html" class = "navi-link">apply</a>
-      </div>
+        <a href="specialties/spirit.html" class = "navi-link specialties"><div class="navi-link-cont">spirit</div></a>
+        <a href="specialties/service.html" class = "navi-link specialties"><div class="navi-link-cont">service</div></a>
+        <a href="specialties/scholarship.html" class = "navi-link specialties"><div class="navi-link-cont">scholarship</div></a>
+  
+        <div class ="etc">
+          <a href="leaders.html" class = "navi-link"><div class="navi-link-cont">leaders</div></a>
+          <a href="apply.html" class = "navi-link"><div class="navi-link-cont">apply</div></a>
+        </div>
     </header>
     <main>
-    <h1> Students Helping Students. </h1>
-      <!-- slideshow here> -->
-      <div> slideshow placeholder </p>
-      <h4>Who are we?</h4>
+      <h1>students helping students.</h1>
+      <div class="w3-content w3-section">
+        <img class="mySlides" src="picutres\events\christmas_afu.jpg">
+        <img class="mySlides" src="picutres\events\move_in_the_quad.png">
+        <img class="mySlides" src="picutres\events\future_wolf.png">
+        <img class="mySlides" src="picutres\events\ikea.png">
+      </div>
+
+      <div id="desc">
+      <h3>Who are we?</h3>
       <p> ACHS Link Crew is a group of juniors and seniors who have volunteered to
         help freshmen make their transition to high school as smooth, and
         memorable as possible! Each freshman is assigned two Link Crew leaders
@@ -33,14 +42,52 @@
         freshman-only dances, rallies, and themed events like pumpkin carving, and
         gingerbread house building. More info on the events we host can be found
         here. As a club, we focus on three aspects of an academic year, being
-        <a href="#">spirit<a>, <a href="#">scholarship<a>, and
-        <a href="#">service<a>. Apply now at <a href="#">this link!</a></p>
-
+        <a href="specialties/spirit.html">spirit<a>, <a href="specialties/scholarship.html">scholarship<a>, and
+        <a href="specialties/service.html">service<a>. Apply now at <a href="apply.html">this link!</a></p>
+      </div>
 
     </main>
     <footer>
-      <div>footer placeholder</div>
-      <a href = "mailto: shannonkyle.deleon@gmail.com">shannonkyle.deleon@gmail.com</a>
+      <div class="footer-ppl" id="coordinator">
+        <h4>Link Crew Coordinator</h4>
+        <p>Nhu-Y Vu</p>
+        <a href = "mailto: sample@gmail.com">coordinatoremail@gmail.com</a>
+        <p>Room A205</p>
+      </div>
+
+      <div class="footer-ppl" id="service-commish">
+        <h4>Service Commissioner</h4>
+        <p>John Doe</p>
+        <a href = "mailto: sample@gmail.com">comissioneremail@gmail.com</a>
+      </div>
+
+      <div class="footer-ppl" id="spirit-commish">
+        <h4>Spirit Commissioner</h4>
+        <p>John Doe</p>
+        <a href = "mailto: sample@gmail.com">comissioneremail@gmail.com</a>
+      </div>
+
+      <div class="footer-ppl" id="scholarship-commish">
+        <h4>Scholarship Commissioner</h4>
+        <p>John Doe</p>
+        <a href = "mailto: sample@gmail.com">comissioneremail@gmail.com</a>
+      </div>
     </footer>
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 2 seconds
+      }
+    </script>
   </body>
 </html>

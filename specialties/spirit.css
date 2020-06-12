@@ -1,0 +1,32 @@
+.events{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "pic title";
+    margin-bottom: 2em;
+}
+
+#events_div #event-info{
+    grid-area: title;
+}
+
+#events_div iframe, #events_div img{
+    grid-area: pic;
+    max-width: 320px;
+    max-height: 240px;
+    margin-right: 2em;
+}
+
+#events_div h2{
+    font-size: 2em;
+    color: #DDD156;
+}
+
+#intro{
+    text-align: center;
+}
+
+h1{
+    color: #DDD156;
+}

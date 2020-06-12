@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: #DDD156;
+}
+
+h3{
+    color: #DDD156;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+img {
+    max-width: 60%;
+    max-height: 30%;
+    align-self:center;
+}
+

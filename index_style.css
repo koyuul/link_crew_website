@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    color: #DDD156;
+}
+
+#desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#desc p{
+    text-align: center;
+}
+
+.mySlides{
+    display: none;
+    width: 400px;
+    height: 250px;
+}
